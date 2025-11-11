@@ -7,7 +7,7 @@ import logoImg from "./assets/logo.png";
 import AvailablePlaces from "./components/AvailablePlaces.jsx";
 import Error from "./components/Error.jsx";
 import { fetchUserPlaces, updateUserPlaces } from "./http.js";
-// import Error from "./components/Error.jsx";
+import ErrorPage from "./components/Error.jsx";
 function App() {
   const selectedPlace = useRef();
 
@@ -119,7 +119,7 @@ function App() {
         </p>
       </header>
       <main>
-        {/* {error && <Error title="An error occured" message={error.message}/>} */}
+        {error && <ErrorPage title="An error occured" message={error.message}/>}
         {!error && (
           <Places
             title="I'd like to visit ..."
