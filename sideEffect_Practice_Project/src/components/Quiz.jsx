@@ -6,6 +6,20 @@ import Questions from "./Questions";
 export default function Quiz() {
   const [isActiveQuestions, setIsActiveQuestions] = useState([]);
 
+  const handleUserAnswers = useCallback(function handleUserAnswers(
+    selectedAns
+  ) {
+    setIsActiveQuestions((preActiveQuestions) => {
+      return [...preActiveQuestions, selectedAns];
+    });
+  },
+  []);
+
+  const handleSkipQuestions = useCallback(
+    () => handleUserAnswers(null),
+    [handleUserAnswers]
+  );
+
   const activeQuestionIndex = isActiveQuestions.length;
   const isComplete = activeQuestionIndex === questions.length;
 
@@ -18,25 +32,11 @@ export default function Quiz() {
     );
   }
 
-  const handleUserAnswers = useCallback(
-    function handleUserAnswers(selectedAns) {
-      setIsActiveQuestions((preActiveQuestions) => {
-        return [...preActiveQuestions, selectedAns];
-      });
-    },
-    []
-  );
-
-  const handleSkipQuestions = useCallback(
-    () => handleUserAnswers(null),
-    [handleUserAnswers]
-  );
-
   return (
     <div id="quiz">
       <Questions
         key={activeQuestionIndex}
-        index = {activeQuestionIndex}
+        index={activeQuestionIndex}
         onSelectedAns={handleUserAnswers}
         onSkipAns={handleSkipQuestions}
       />
