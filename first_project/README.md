@@ -1,16 +1,101 @@
-# React + Vite
+# First React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Initial React project setup for learning and experimentation with React fundamentals and Vite build tool.
 
-Currently, two official plugins are available:
+## 🎯 Learning Objectives
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React project initialization
+- Understanding Vite configuration
+- Basic component structure
+- JSX fundamentals
+- Development workflow
 
-## React Compiler
+## 🚀 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js (v14 or higher)
+- npm or yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+```bash
+npm install
+```
+
+### Running the Project
+
+```bash
+npm run dev
+```
+
+The application will run on `http://localhost:5173`
+
+## 📁 Project Structure
+
+```
+src/
+├── App.jsx          # Main application component
+├── App.css          # Application styles
+├── main.jsx         # Entry point
+├── index.css        # Global styles
+└── assets/          # Images and static files
+```
+
+## 🛠️ Built With
+
+- React 19.0.0
+- Vite - Modern build tool
+- ESLint - Code quality
+- JavaScript (JSX)
+
+## 📝 Getting Started with React
+
+This project demonstrates:
+
+- Component creation
+- JSX syntax
+- Props and state
+- Event handling
+- Styling components
+
+## 💡 Vite Features
+
+- ⚡️ Lightning-fast HMR (Hot Module Replacement)
+- 📦 Optimized build
+- 🔧 Simple configuration
+- 🎯 Modern JavaScript support
+
+## 📚 Scripts
+
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build optimized production bundle
+- `npm run preview` - Preview production build locally
+
+## 🎓 Next Steps
+
+After completing this project, explore:
+
+- Component composition
+- State management
+- Hooks (useState, useEffect)
+- Routing
+- API integration
+
+## 📖 Resources
+
+- [React Documentation](https://react.dev/)
+- [Vite Documentation](https://vitejs.dev/)
+- [JavaScript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+## 🔧 Configuration Files
+
+- `vite.config.js` - Vite configuration
+- `eslint.config.js` - ESLint rules
+- `package.json` - Project dependencies and scripts
+
+## 🎨 Styling
+
+- CSS modules support
+- Regular CSS files
+- CSS-in-JS libraries can be added as needed
